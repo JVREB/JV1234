@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:
+                repeating-radial-gradient(
+                    circle at center,
+                    transparent 0 45px,
+                    rgba(255,255,255,.12) 46px 48px
+                ),
+                linear-gradient(135deg, #b00000, #e00000 45%, #001f5b);
+        }
+
+        .login-box {
+            width: 360px;
+            padding: 35px;
+            background: rgba(0, 0, 0, 0.82);
+            border: 3px solid #e00000;
+            border-radius: 18px;
+            box-shadow: 0 0 30px #000;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px #e00000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 2px solid #e00000;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 13px;
+            background: #e00000;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #0066ff;
+        }
+
+        .forgot {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .forgot a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .forgot a:hover {
+            color: #ff3333;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Homepage1.html">Home</a>
+    </nav>
+
+    <main>
+        <div class="login-box">
+            <h1>Log in</h1>
+
+            <form action="home.html" method="get">
+                <label for="username">Username</label>
+                <input type="text" id="username"
+                       name="username" placeholder="Enter username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       name="password" placeholder="Enter password">
+
+                <button type="submit" class="login-btn">
+                    LOGIN
+                </button>
+
+                <div class="forgot">
+                    <a href="#">Forgot Password</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

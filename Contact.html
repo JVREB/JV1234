@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - JV Cellphone Shop</title>
+<style>
+body {
+    margin: 0; font-family: Arial, sans-serif; color: white;
+    background: radial-gradient(circle at top left, #ff2525, transparent 45%),
+                radial-gradient(circle at bottom right, #0066ff, transparent 45%), #090914;
+}
+header, footer { background: #05050f; padding: 22px; text-align: center; }
+header { border-bottom: 2px solid red; }
+nav { background: #111; padding: 15px; text-align: center; }
+nav a { color: white; text-decoration: none; margin: 10px; font-weight: bold; }
+nav a:hover { color: #ff4545; }
+h2 { text-align: center; margin: 35px; }
+.contact-box { max-width: 500px; margin: auto; padding: 25px; background: #101020ee; border: 1px solid #ff3838; border-radius: 15px; }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; background: #171729; color: white; border: 1px solid #555; border-radius: 7px; }
+textarea { height: 120px; }
+button { background: #e52645; color: white; border: none; padding: 12px 22px; border-radius: 20px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header><h1>JV CELLPHONE SHOP</h1></header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="film Viewing.html">Film</a>
+<a href="contact.html" class="active">contact</a>
+</nav>
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+
+<footer style="margin-top:40px;"></footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you, " + document.getElementById("name").value +
+          "! This is a demonstration form.");
+    this.reset();
+});
+</script>
+
+</body>
+</html>

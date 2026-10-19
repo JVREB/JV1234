@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products - JV Cellphone Shop</title>
+<style>
+body {
+    margin: 0; font-family: Arial, sans-serif; color: white;
+    background: radial-gradient(circle at top left, #ff2525, transparent 45%),
+                radial-gradient(circle at bottom right, #0066ff, transparent 45%), #090914;
+}
+header, footer { background: #05050f; padding: 22px; text-align: center; }
+header { border-bottom: 2px solid red; }
+nav { background: #111; padding: 15px; text-align: center; }
+nav a { color: white; text-decoration: none; margin: 10px; font-weight: bold; }
+nav a:hover { color: #ff4545; }
+h2 { text-align: center; margin: 35px; }
+.products { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); gap: 20px; padding: 20px; }
+.card { background: #101020ee; border: 1px solid #ff3838; padding: 15px; text-align: center; border-radius: 12px; }
+.card img { width: 100%; height: 160px; object-fit: contain; background: white; border-radius: 8px; }
+.price { color: #ff6464; font-weight: bold; font-size: 20px; }
+button { background: #e52645; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header><h1>JV CELLPHONE SHOP</h1></header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="products.html" class="active">products</a>
+<a href="film Viewing.html">Film</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=500&q=80" alt="iPhone">
+<h3>iPhone 15</h3><p>128GB Storage</p>
+<p class="price">35,000</p>
+<button onclick="details('iPhone 15','128GB','?35,000')">View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Samsung phone">
+<h3>Samsung Galaxy</h3><p>256GB Storage</p>
+<p class="price">25,000</p>
+<button onclick="details('Samsung Galaxy','256GB','?25,000')">View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=500&q=80" alt="Redmi phone">
+<h3>Redmi Note</h3><p>256GB Storage</p>
+<p class="price">12,000</p>
+<button onclick="details('Redmi Note','256GB','?12,000')">View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=500&q=80" alt="Infinix phone">
+<h3>Infinix Note</h3><p>128GB Storage</p>
+<p class="price">8,000</p>
+<button onclick="details('Infinix Note','128GB','?8,000')">View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Vivo phone">
+<h3>Vivo Smartphone</h3><p>256GB Storage</p>
+<p class="price">15,000</p>
+<button onclick="details('Vivo Smartphone','256GB','?15,000')">View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=500&q=80" alt="OPPO phone">
+<h3>OPPO Smartphone</h3><p>128GB Storage</p>
+<p class="price">13,000</p>
+<button onclick="details('OPPO Smartphone','128GB','?13,000')">View Details</button>
+</div>
+
+</div>
+
+<footer></footer>
+
+<script>
+function details(name, storage, price) {
+    alert("Product: " + name + "\nStorage: " + storage + "\nPrice: " + price);
+}
+</script>
+</body>
+</html>
